@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MentoreeApplication.MainPage">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0,1">
+                <GradientStop Color="#2D1F30" Offset="0.02" />
+                <GradientStop Color="Black" Offset="2.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" Orientation="Vertical" Padding="20">
+            <Label HorizontalOptions="CenterAndExpand"
+                   Text="Sign up as Mentee"
+                   VerticalOptions="End"
+                   Margin="20">
+            </Label>
+            <Frame CornerRadius="50"
+                   BorderColor="Transparent"
+                   BackgroundColor="White"
+                   HeightRequest="80"
+                   WidthRequest="80"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Padding="5">
+            </Frame>
+        </StackLayout>
+        <StackLayout Grid.Row="1" VerticalOptions="StartAndExpand" Margin="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- first name -->
+            <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Vertical" Margin="10">
+            <Label Text="First name: " 
+                   HorizontalOptions="Start" 
+                   Padding="10" />
+            <Entry TextColor="Gray" 
+                           Placeholder="Type here" 
+                           PlaceholderColor="Gray" />
+            </StackLayout>
+            <!-- last name -->
+            <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" Margin="10">
+            <Label Text="Last name: " 
+                   HorizontalOptions="Start" 
+                   Padding="10" />
+            <Entry TextColor="Gray" 
+                   Placeholder="Type here" 
+                   PlaceholderColor="Gray" />
+            </StackLayout>
+            </Grid>
+            <!-- email -->
+            <!-- gagi, nagawa mo na?? pano kaya maging puti ung line?-->
+            <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" Margin="10">
+            <Label Text="Email: " 
+                   HorizontalOptions="Start" 
+                   Padding="10" />
+            <Entry TextColor="Gray" 
+                   Placeholder="Type here" 
+                   PlaceholderColor="Gray" />
+            </StackLayout>
+            <!-- create password -->
+            <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" Margin="10">
+            <Label Text="Create password: " 
+                   HorizontalOptions="Start" 
+                   Padding="10" />
+            <Entry TextColor="Gray" 
+                   Placeholder="Type here" 
+                   PlaceholderColor="Gray" />
+            </StackLayout>
+            <!-- confirm password -->
+            <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" Margin="10">
+            <Label Text="Confirm password: " 
+                   HorizontalOptions="Start"
+                   Padding="10" />
+            <Entry TextColor="Gray" 
+                   Placeholder="Type here" 
+                   PlaceholderColor="Gray" />
+            </StackLayout>
+            <Button x:Name="btnNext"
+                    Clicked="btnNext_Clicked"
+                    Text="Next" 
+                    Margin="18" 
+                    Padding="10" 
+                    WidthRequest="250" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
