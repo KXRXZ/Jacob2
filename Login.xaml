@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MentoreeApplication.Pages.Login"
+             Title="Login">
+    <Grid>
+        <Grid.Background>
+            <!-- how? -->
+            <LinearGradientBrush EndPoint="0,1">
+                <GradientStop Color="#2D1F30" Offset="0.02" />
+                <GradientStop Color="Black" Offset="2.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" BackgroundColor="Transparent">
+            <Label HorizontalOptions="CenterAndExpand"
+                   Text="LOG IN TO MENTOREE"
+                   VerticalOptions="End"
+                   Padding="80">    
+                <!--this is where you adjust the 'Log in to Mentoree'-->
+            </Label>
+        </Grid>
+        <StackLayout Grid.Row="6" VerticalOptions="StartAndExpand">
+            <!-- Adjusted VerticalOptions to "StartAndExpand" -->
+            <!-- username -->
+            <Label Text="     Username" 
+                   HorizontalOptions="Start" 
+                   Padding="8" />
+            <!-- how 2 add space here in username?  -->
+<<<<<<< HEAD
+            <Frame BackgroundColor="White" 
+                   BorderColor="White" 
+                   CornerRadius="5" 
+                   Padding="5" 
+                   HeightRequest="45" 
+                   WidthRequest="300">
+            <Entry TextColor="Grey" 
+                   Placeholder="Enter Username" 
+                   PlaceholderColor="Gray" />
+=======
+            <Frame BackgroundColor="White" BorderColor="White" CornerRadius="5" Padding="5" HeightRequest="45" WidthRequest="300">
+                <Entry TextColor="Grey" Placeholder="Enter your username" PlaceholderColor="Gray" />
+>>>>>>> 7ff74c253fa0e7750966c28b9c1cd7307943805f
+            </Frame>
+            <!-- password and forgot labels -->
+            <StackLayout Margin="0,10,0,0">
+<<<<<<< HEAD
+            <Label Text="     Password"
+                   HorizontalOptions="Start" 
+                   Padding="8" />
+             <!-- how 2 add space here in password?  -->
+             <Frame BackgroundColor="White" 
+                    BorderColor="White"
+                    CornerRadius="5" Padding="5" 
+                    HeightRequest="45" 
+                    WidthRequest="300">
+             <Entry TextColor="Grey" 
+                    Placeholder="Enter Password" 
+                    PlaceholderColor="Gray" 
+                    IsPassword="True" />
+             </Frame>
+=======
+                <Label FontFamily="CandalRegular" TextColor="White" Text="     Password" HorizontalOptions="Start" Padding="8" />
+                <!-- how 2 add space here in password?  -->
+                <Frame BackgroundColor="White" BorderColor="White" CornerRadius="5" Padding="5" HeightRequest="45" WidthRequest="300">
+                    <Entry TextColor="Grey" Placeholder="Enter your password" PlaceholderColor="Gray" IsPassword="True" />
+
+                </Frame>
+>>>>>>> 7ff74c253fa0e7750966c28b9c1cd7307943805f
+            </StackLayout>
+            <!-- sign-in button -->
+            <Button Margin="0,15" 
+                    BackgroundColor="Blue" 
+                    Text="Log in" TextColor="White" 
+                    HorizontalOptions="Center" HeightRequest="45" 
+                    WidthRequest="150" 
+                    x:Name="btnLogin"
+                    Clicked="btnLogin_Clicked"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

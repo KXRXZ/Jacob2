@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MentoreeApplication.Pages.Splash"
+             Title="Splash"
+             Background="Black"
+             Padding="0,100,0,0">
+    <StackLayout>
+        <ContentView Background="Black" IsClippedToBounds="False">
+            <ContentView.GestureRecognizers>
+                <TapGestureRecognizer />
+            </ContentView.GestureRecognizers>
+            <Image
+                Source="splashmentoree.png"
+                HeightRequest="200"
+                WidthRequest="200">
+            </Image>
+        </ContentView>
+    
+        <StackLayout Orientation="Horizontal"/>
+    
+        <Label x:Name="lblWelcome"
+               Text="Welcome"
+               TextTransform="Uppercase"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
+    
+        <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+               Padding="0,20,0,110"
+               HorizontalTextAlignment="Center"/>
+
+        <Button
+            x:Name="getStartedBtn"
+            Clicked="getStartedBtn_Clicked"
+            Text="Get Started"
+            HeightRequest="45"
+            WidthRequest="290"
+            FontAttributes="Bold"/>
+    </StackLayout>
+</ContentPage>

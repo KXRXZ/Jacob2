@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MentoreeApplication.Pages.Role">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0,1">
+                <GradientStop Color="#2D1F30" Offset="0" />
+                <GradientStop Color="Black" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" BackgroundColor="Transparent">
+            <Label FontSize="20"
+           HorizontalOptions="CenterAndExpand"
+           Text="Join as:"
+           Padding="80">
+            </Label>
+        </Grid>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Margin="25" Padding="0,120,0,0">
+            <Label FontSize="18" 
+                   Text="MENTOR" 
+                   VerticalOptions="Center" 
+                   Padding="50" />
+            <Label FontSize="18" 
+                   Text="MENTEE" 
+                   VerticalOptions="Center" 
+                   Padding="50" />
+        </StackLayout>
+        <!-- Add padding or margin to create separation -->
+        <StackLayout VerticalOptions="Start" Padding="0,200,0,0">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <ImageButton Source="teacher_with_transparent.png" 
+                             HorizontalOptions="Center" 
+                             HeightRequest="180" 
+                             WidthRequest="180" 
+                             x:Name="MentorImg" 
+                             Clicked="MentorImg_Clicked" 
+                             Background="Transparent"/>
+                <ImageButton Source="student_with_transparent.png"
+                             HorizontalOptions="Center" 
+                             HeightRequest="180" 
+                             WidthRequest="180"
+                             x:Name="MenteeReg" 
+                             Clicked="MenteeReg_Clicked" 
+                             Background="Transparent"/>
+            </StackLayout>
+        </StackLayout>
+        <!-- StackLayout for Mentor and Mentee labels -->
+        <StackLayout VerticalOptions="Start" Padding="0,450,0,0">
+            <Label FontFamily="CandalRegular" TextColor="White" HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Already have an account?"/>
+                            <!--itong line para pagsamahin ung text sa iisang line -->
+                            <Span Text="  Log in" TextColor="Blue" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </Grid>
+</ContentPage>
